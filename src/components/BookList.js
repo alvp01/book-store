@@ -1,5 +1,5 @@
-import Book from './Book';
 import { useSelector } from 'react-redux';
+import Book from './Book';
 
 const BookList = () => {
   const books = useSelector((state) => state.booksReducer.books);
@@ -11,7 +11,6 @@ const BookList = () => {
         return (
           <li key={book.id}>
             <Book
-              id={book.id}
               title={book.title}
               author={book.author}
               category={book.category}
@@ -22,6 +21,6 @@ const BookList = () => {
       })}
     </ul>
   );
-}
+};
 
 export default BookList;

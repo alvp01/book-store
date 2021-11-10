@@ -20,12 +20,12 @@ const initialState = {
       category: 'Economy',
       author: 'Suzanne Collins',
       title: 'Capital in the Twenty-first Century',
-    }
+    },
   ],
-}
+};
 
 const booksReducer = (state = initialState, action) => {
-  switch(action.type){
+  switch (action.type) {
     case ADD_BOOK:
       return { books: [...state.books, action.payload] };
     case REMOVE_BOOK:
@@ -33,7 +33,7 @@ const booksReducer = (state = initialState, action) => {
     default:
       return state;
   }
-}
+};
 
 export const addBook = (payload) => ({
   type: ADD_BOOK,

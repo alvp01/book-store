@@ -12,8 +12,6 @@ import Categories from './pages/Categories';
 import store from './redux/createState';
 import './index.css';
 
-
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
@@ -32,6 +30,5 @@ ReactDOM.render(
       </Router>
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-
