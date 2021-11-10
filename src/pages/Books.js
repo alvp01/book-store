@@ -1,8 +1,11 @@
 import React from "react";
+import BookList from "../components/BookList";
+import BookForm from "../components/BookForm";
 
 const Books = () => (
-  <div>
-    <h1>Books Under construction</h1>
+  <div className="container">
+    <BookList />
+    <BookForm />
   </div>
 );
 
