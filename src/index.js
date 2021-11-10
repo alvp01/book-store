@@ -1,30 +1,36 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
-import './App.css';
+import { Provider } from 'react-redux';
 import Navbar from './components/Navbar';
 import Books from './pages/Books';
 import Categories from './pages/Categories';
+import store from './redux/createStore';
 import './index.css';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route path="/categories">
-          <Categories />
-        </Route>
-        <Route exact path="/">
-          <Books />
-        </Route>
-      </Switch>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Navbar />
+        <div className="container">
+          <Switch>
+            <Route path="/categories">
+              <Categories />
+            </Route>
+            <Route exact path="/">
+              <Books />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
