@@ -9,7 +9,7 @@ import { Provider } from 'react-redux';
 import Navbar from './components/Navbar';
 import Books from './pages/Books';
 import Categories from './pages/Categories';
-import store from './redux/createState';
+import store from './redux/configureStore';
 import './index.css';
 
 ReactDOM.render(
