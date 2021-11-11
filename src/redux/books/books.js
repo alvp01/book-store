@@ -2,26 +2,7 @@ const ADD_BOOK = 'bookstore/src/redux/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/src/redux/REMOVE_BOOK';
 
 const initialState = {
-  books: [
-    {
-      id: 1,
-      category: 'Action',
-      author: 'Suzanne Collins',
-      title: 'The Hunger Games',
-    },
-    {
-      id: 2,
-      category: 'Science Fiction',
-      author: 'Frank Herbert',
-      title: 'Dune',
-    },
-    {
-      id: 3,
-      category: 'Economy',
-      author: 'Suzanne Collins',
-      title: 'Capital in the Twenty-first Century',
-    },
-  ],
+  books: [],
 };
 
 const booksReducer = (state = initialState, action) => {
