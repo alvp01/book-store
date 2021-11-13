@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { useState } from 'react';
-import { addBook } from '../redux/books/books';
+import BookstoreAPI from '../services/BookstoreAPI';
 
 const BookForm = () => {
   const [fieldValue, setValue] = useState({
@@ -25,12 +25,13 @@ const BookForm = () => {
         author: fieldValue.author,
         category: fieldValue.category,
       };
-      dispatch(addBook(newBook));
+      dispatch(BookstoreAPI.addBooktoAPI(newBook));
       setValue({
         author: '',
         title: '',
         category: 'Action',
       });
+      dispatch(BookstoreAPI.getAllBooksFromAPI());
     }
   };
 

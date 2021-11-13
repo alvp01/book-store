@@ -1,12 +1,15 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import BookstoreAPI from '../services/BookstoreAPI';
 
 const Book = ({
   id, category, title, author, currentChapter,
 }) => {
   const dispatch = useDispatch();
-  const handleClick = () => dispatch(removeBook(id));
+  const handleClick = () => {
+    dispatch(BookstoreAPI.deleteBookFromAPI(id));
+    dispatch(BookstoreAPI.getAllBooksFromAPI());
+  };
   return (
     <div className="book-container">
       <div className="book-info">
