@@ -12,7 +12,7 @@ const BookList = () => {
   }, []);
 
   return (
-    <ul className="list-unstyled row mx-0 g-0 gy-3">
+    <ul className="book-list">
       {books.map((book) => {
         const currentChapter = Math.floor(Math.random() * 11);
         return (

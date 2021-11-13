@@ -14,6 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -24,4 +25,48 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f6fa;
+}
+
+.book-page-container {
+  background-color: white;
+  width: min(1280px,100%);
+  margin: 0;
+  padding: 5em;
+  border-radius: 0.5em;
+}
+
+.book-list {
+  margin-bottom: 2em;
 }

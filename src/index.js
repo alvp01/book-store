@@ -6,7 +6,7 @@ import {
   Route,
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import Navbar from './components/Navbar';
+
 import Books from './pages/Books';
 import Categories from './pages/Categories';
 import store from './redux/configureStore';
@@ -16,8 +16,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-        <Navbar />
-        <div className="container">
+        <div className="container d-flex justify-center align-center">
           <Switch>
             <Route path="/categories">
               <Categories />
