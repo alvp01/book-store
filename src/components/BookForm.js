@@ -36,29 +36,27 @@ const BookForm = () => {
   };
 
   return (
-    <div>
+    <div className="form-container d-flex flex-column w-100">
       <h2>ADD NEW BOOK</h2>
-      <form>
-        <div>
-          <input
-            type="text"
-            placeholder="Book title"
-            value={fieldValue.title}
-            onChange={changeInput}
-            name="title"
-            required
-          />
-        </div>
-        <div className="col-md-3">
-          <input
-            type="text"
-            placeholder="Book author"
-            value={fieldValue.author}
-            name="author"
-            onChange={changeInput}
-            required
-          />
-        </div>
+      <form className="d-flex flex-row w-100">
+
+        <input
+          type="text"
+          placeholder="Book title"
+          value={fieldValue.title}
+          onChange={changeInput}
+          name="title"
+          required
+        />
+
+        <input
+          type="text"
+          placeholder="Book author"
+          value={fieldValue.author}
+          name="author"
+          onChange={changeInput}
+          required
+        />
         <div>
           <select
             value={fieldValue.category}
@@ -74,11 +72,11 @@ const BookForm = () => {
             <option>Economy</option>
           </select>
         </div>
-        <div className="col-md-2 pb-5 pb-md-0">
-          <button type="submit" onClick={addBookToList}>
-            ADD BOOK
-          </button>
-        </div>
+
+        <button type="submit" className="add-book-btn btn" onClick={addBookToList}>
+          ADD BOOK
+        </button>
+
       </form>
     </div>
   );
