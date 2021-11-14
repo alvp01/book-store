@@ -71,6 +71,31 @@ ul {
   background-color: #f5f6fa;
 }
 
+.nav-bar {
+  background-color: white;
+  width: min(1280px,100%);
+  padding: 2em 5em 0 5em;
+  border-bottom: solid 1px #e8e8e8;
+  height: 6em;
+}
+
+.brand-name {
+  color: #0290ff;
+  font-weight: bold;
+  font-size: 2em;
+  margin-right: 1em;
+}
+
+.nav-links li {
+  margin: 0 1em 0 0;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.nav-links li>a  {
+  text-decoration: none;
+}
+
 .book-page-container {
   background-color: white;
   width: min(1280px,100%);

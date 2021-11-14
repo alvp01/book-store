@@ -17,7 +17,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-        <div className="container d-flex justify-center align-center">
+        <div className="container d-flex flex-column justify-center align-center">
           <Navbar />
           <Switch>
             <Route path="/categories">
