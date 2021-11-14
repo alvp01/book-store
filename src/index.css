@@ -21,7 +21,10 @@ body {
   overflow-x: hidden;
 }
 
-h2, h3, h4, p {
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 
@@ -73,7 +76,7 @@ ul {
 
 .nav-bar {
   background-color: white;
-  width: min(1280px,100%);
+  max-width: 1280px;
   padding: 2em 5em 0 5em;
   border-bottom: solid 1px #e8e8e8;
   height: 6em;
@@ -92,13 +95,13 @@ ul {
   text-decoration: none;
 }
 
-.nav-links li>a  {
+.nav-links li > a {
   text-decoration: none;
 }
 
 .book-page-container {
   background-color: white;
-  width: min(1280px,100%);
+  max-width: 1280px;
   margin: 0;
   padding: 3em 5em 5em 5em;
   border-radius: 0.5em;
@@ -116,7 +119,8 @@ form {
   justify-content: space-between;
 }
 
-input, select {
+input,
+select {
   height: 2.8em;
   border-radius: 0.5em;
   border: solid 1px #e8e8e8;
