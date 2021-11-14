@@ -36,7 +36,7 @@ const BookForm = () => {
   };
 
   return (
-    <div className="form-container d-flex flex-column border-box w-100">
+    <div className="form-container d-flex flex-column w-100">
       <h2>ADD NEW BOOK</h2>
       <form className="d-flex flex-row w-100">
 
